@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="products.css">
+</head>
+<body>
+  <div class="controls">
+    <select id="categoryFilter" onchange="filterProducts()">
+      <option value="All">All</option>
+      <option value="Clothing">Clothing</option>
+      <option value="Electronics">Electronics</option>
+    </select>
+
+    <select id="sortOption" onchange="filterProducts()">
+      <option value="price">Sort by Price</option>
+      <option value="rating">Sort by Rating</option>
+    </select>
+  </div>
+
+  <div id="productContainer" class="grid"></div>
+
+  <script src="products.js"></script>
+</body>
+</html>
